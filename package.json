@@ -1,14 +1,27 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a command line application for generating readme files.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Zachary Elliott",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachary-berdell-elliott/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "creator"
+  ],
+  "bugs": {
+    "url": "https://github.com/zachary-berdell-elliott/readme-generator/issues"
+  },
+  "homepage": "https://github.com/zachary-berdell-elliott/readme-generator#readme"
 }

@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 fs = require("fs");
 inquirer = require("inquirer");
-//import generateMarkdown from "./utils/generateMarkdown";
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = ["What is the title of your project?", "What license would you like to use?", "Enter a description for the application.", "How is the application installed?", "How is the application used?", "How should someone contribute to the application?", "How should someone test the application?"];
@@ -29,7 +29,24 @@ function init() {
             name: 'description'
         },
         {
-
+            type: 'input',
+            message: questions[3],
+            name: 'installation'
+        },
+        {
+            type: 'input',
+            message: questions[4],
+            name: 'use'
+        },
+        {
+            type: 'input',
+            message: questions[5],
+            name: 'contribution'
+        },
+        {
+            type: 'input',
+            message: questions[6],
+            name: 'testing'
         }
     ]);
         

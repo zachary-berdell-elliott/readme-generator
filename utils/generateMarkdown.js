@@ -1,36 +1,44 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(data.license === "GNU"){
+  var licenseBadge;
 
+  if(license === "GNU"){
+    licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
   }
-  else if(data.license === "MIT") {
 
+  else if(license === "MIT") {
+    licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }
-  else if(data.license === "Apache"){
 
+  else if(license === "Apache"){
+    licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
   }
-  else if(data.license === "BSD"){
 
+  else if(license === "BSD"){
+    licenseBadge = '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
   }
+
   else{
-
+    licenseBadge = '';
   }
+
+  return licenseBadge;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(data.license === "GNU"){
+  if(license === "GNU"){
 
   }
-  else if(data.license === "MIT") {
+  else if(license === "MIT") {
 
   }
-  else if(data.license === "Apache"){
+  else if(license === "Apache"){
 
   }
-  else if(data.license === "BSD"){
+  else if(license === "BSD"){
 
   }
   else{
@@ -47,7 +55,7 @@ Copyright ${data.githubUser}
   
 `
 
-  if(data.license === "GNU"){
+  if(license === "GNU"){
     licenseSection += `This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -62,7 +70,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
   }
 
-  else if(data.license === "MIT") {
+  else if(license === "MIT") {
     licenseSection += `Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -70,7 +78,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
   THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`;
   }
 
-  else if(data.license === "Apache"){
+  else if(license === "Apache"){
     licenseSection += `Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -84,7 +92,7 @@ See the License for the specific language governing permissions and
 limitations under the License.`;
   }
 
-  else if(data.license === "BSD"){
+  else if(license === "BSD"){
     licenseSection += `Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -97,7 +105,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   else{
-    licenseSection = ' '
+    licenseSection = '';
   }
   
   return licenseSection;

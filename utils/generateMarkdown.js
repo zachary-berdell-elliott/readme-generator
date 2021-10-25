@@ -115,7 +115,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
 
-  ## Description
+## Description
 ${data.description}
 
 ## Table of Contents
@@ -142,7 +142,7 @@ ${data.contribution}
 ${data.tests}
 
 ## Questions #questions
-
+If you have any questions, please contact me at ${data.email} to receive an answer to your question. If you would like to view other projects by me then [visit my profile here.](https://github.com/${data.githubUser})
 `;
 }
 

@@ -49,14 +49,9 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  var licenseSection = `${license}
-
-Copyright ${data.githubUser}
-  
-`
 
   if(license === "GNU"){
-    licenseSection += `This program is free software: you can redistribute it and/or modify
+    return `This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -71,7 +66,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
   }
 
   else if(license === "MIT") {
-    licenseSection += `Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    return `Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     
@@ -79,7 +74,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
   }
 
   else if(license === "Apache"){
-    licenseSection += `Licensed under the Apache License, Version 2.0 (the "License");
+    return `Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
     
@@ -93,7 +88,7 @@ limitations under the License.`;
   }
 
   else if(license === "BSD"){
-    licenseSection += `Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+    return `Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
     
@@ -105,10 +100,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   else{
-    licenseSection = '';
+    return '';
   }
-  
-  return licenseSection;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -122,27 +115,30 @@ ${data.description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contribution](#contribution)
 * [Tests](#tests)
 * [Questions](#questions)
 
-## Installation #installation
+## Installation 
 ${data.installation}
 
-## Usage #usage
-${data.use}
+## Usage 
+${data.usage}
 
-## License #license
+## License 
+Copyright ${data.githubUser}
 ${renderLicenseSection(data.license)}
 
-## Contributing #contributing
+## Contribution 
 ${data.contribution}
 
-## Tests #tests
+## Tests 
 ${data.tests}
 
-## Questions #questions
-If you have any questions, please contact me at ${data.email} to receive an answer to your question. If you would like to view other projects by me then [visit my profile here.](https://github.com/${data.githubUser})
+## Questions 
+FAQ: ${data.questions}
+
+If you have any additional questions, please contact me at ${data.email} to receive an answer to your question. If you would like to view other projects by me then [visit my profile here.](https://github.com/${data.githubUser})
 `;
 }
 

@@ -1,7 +1,7 @@
-# Example Project [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Example Generation [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This is an example demonstration of this project
+This is a generation of an example readme. It shows how the readme is generated
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,13 +12,14 @@ This is an example demonstration of this project
 * [Questions](#questions)
 
 ## Installation 
-It is installed by cloning the github repository and running npm i to get the neccessary dependancies.
+This application is not installed as it is an example generation.
 
 ## Usage 
-It is used to generate readme files. You enter what the information for the project is and generate the files.
+You can use other applications but this is just an example.
 
 ## License 
 Copyright zachary-berdell-elliott
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -26,12 +27,14 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
   THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contribution 
-They can contribute by contacting me on github and getting permission to contribute.
+This section should include contribution information.
 
 ## Tests 
-Someone can test the application after they have downloaded it and installed the neccessary dependencies.
+You can put test information here.
 
 ## Questions 
-FAQ: One question people ask is how do you install npm. This can be done by installing it from your package manager on linux or mac and on windows it can be done by finnding it on the internet.
+FAQ: 
+
+To answer this being vague, It is vague because this is an example.
 
 If you have any additional questions, please contact me at zacharyberdell@gmail.com to receive an answer to your question. If you would like to view other projects by me then [visit my profile here.](https://github.com/zachary-berdell-elliott)

@@ -26,7 +26,7 @@ function renderLicenseBadge(license) {
   return licenseBadge;
 }
 
-// TODO: Create a function that returns the license link
+/*// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license === "GNU"){
@@ -44,7 +44,7 @@ function renderLicenseLink(license) {
   else{
 
   }
-}
+} */
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -127,6 +127,7 @@ ${data.usage}
 
 ## License 
 Copyright ${data.githubUser}
+
 ${renderLicenseSection(data.license)}
 
 ## Contribution 
@@ -136,7 +137,9 @@ ${data.contribution}
 ${data.tests}
 
 ## Questions 
-FAQ: ${data.questions}
+FAQ: 
+
+${data.questions}
 
 If you have any additional questions, please contact me at ${data.email} to receive an answer to your question. If you would like to view other projects by me then [visit my profile here.](https://github.com/${data.githubUser})
 `;

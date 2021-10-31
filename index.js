@@ -60,17 +60,14 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-/*function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data, function (err) {
-        if (err) throw err;
-        console.log('File written.');
-      }); 
-} */
+function writeToFile(fileName, data) {
+    
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        fs.writeFileSync("README.md", generateMarkdown(data), function (err) {
+        fs.writeFileSync("./rendered/README.md", generateMarkdown(data), function (err) {
             if (err) throw err;
             console.log('File written.');
           });
